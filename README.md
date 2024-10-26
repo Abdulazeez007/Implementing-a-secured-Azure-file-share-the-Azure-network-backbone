@@ -74,7 +74,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 ### NEXT: Configure a network security group to allow rdp on the public subnet.
 - create a Network Security Group (NSG), with one inbound security rule, to allow (RDP).
 
-![SOC]()
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191806_w.jpg)
 
 - Associate the (NSG) with the Public subnet. This will allow RDP access to the Public VM I’ll use for testing later on.
 
