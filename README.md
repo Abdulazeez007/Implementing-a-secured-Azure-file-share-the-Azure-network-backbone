@@ -116,3 +116,12 @@ This key will enable me to securely access this File Share from the Private Subn
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileshareNet.jpg)
 
+## STEP 4: Deploy virtual machines into the designated subnets
+- Here we will deploy Two Virtual Machines (VM) to each of our Subnets, to test our Storage Account File Share.
+- One of them will be designated to the Private Subnet, and the second one will be in the Public Subnet.
+- The VM in the Private Subnet should be the only VM that can access this File Share.
+
+**First,** search Virtual Machines in Azure Portal, and Enter.
+- click create.
+- configure Private VM ***AuroraVM-Private***, and deploy to the Private Subnet ***Aurora-Private***.
+
