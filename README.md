@@ -173,7 +173,19 @@ This key will enable me to securely access this File Share from the Private Subn
 
 ## STEP 8: Test the storage connection from the public subnet to confirm that access is denied.
 
-- Connect to the myVMPublic virtual machine via Remote Desktop (RDP) to test if we can access the File Share from a Public Network over the Internet.
+- Connect to the Aurora-VMPublic virtual machine via Remote Desktop (RDP) to test if we can access the File Share from a Public Network over the Internet.
 - First, Navigate to the Virtual machines blade.
 - On the Virtual machines blade, click the AuroraVM-Public entry.
-- On the AuroraVM-Private blade, click Connect and, in the drop down menu, click RDP.
+- On the Aurora-VMPrivate blade, click Connect and, in the drop down menu, click RDP.
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPubConect.jpg)
+
+***And as Expected, Access Is Denied! This time, I receive the New-PSDrive : Access is denied error.***
+
+**Note: Access is denied because the Aurora-VmPublic virtual machine is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for the Azure Storage. The storage account only allows network access from the Private subnet.**
+
+**Next,** from the console pane of the Windows PowerShell ISE console, run the following to verify that the virtual machine has outbound connectivity to the internet.
+
+     ***Test-NetConnection -ComputerName www.bing.com -Port 80***
+
+
