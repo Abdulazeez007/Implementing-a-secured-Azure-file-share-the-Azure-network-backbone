@@ -164,3 +164,16 @@ This key will enable me to securely access this File Share from the Private Subn
 
       ***Test-NetConnection -ComputerName www.bing.com -Port 80***
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivPSFailed.jpg)
+
+***Failed***! As expected.
+
+- The test will not succeed due to the Network Security Group associated with the Private Subnet restricting outbound access to the Internet.
+- At this stage, we can confirm that the virtual machine in the Private Subnet has access to the storage account. But, lacks access to the public internet
+
+## STEP 8: Test the storage connection from the public subnet to confirm that access is denied.
+
+- Connect to the myVMPublic virtual machine via Remote Desktop (RDP) to test if we can access the File Share from a Public Network over the Internet.
+- First, Navigate to the Virtual machines blade.
+- On the Virtual machines blade, click the AuroraVM-Public entry.
+- On the AuroraVM-Private blade, click Connect and, in the drop down menu, click RDP.
