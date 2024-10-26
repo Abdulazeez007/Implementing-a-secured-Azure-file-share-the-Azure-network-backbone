@@ -125,3 +125,23 @@ This key will enable me to securely access this File Share from the Private Subn
 - click create.
 - configure Private VM ***AuroraVM-Private***, and deploy to the Private Subnet ***Aurora-Private***.
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/VMPrivate.jpg)
+
+
+## Now, Follow the same step and vreate the public VM and connect it to the public subnet
+- Search Virtual Machines in Azure Portal, and Enter.
+- Click create.
+- Configure Private VM ***AuroraVM-Public***, and deploy to the Private Subnet ***Aurora-Public***
+
+## STEP 5
+- Test the storage connection from the private subnet to confirm that access is allowed.
+- connect to the AuroraVM-Private virtual machine via Remote Desktop (RDP) and map a drive to the Aurorafile-share.
+
+**First,** Navigate to the Virtual machines blade.
+- On the Virtual machines blade, click the ***AuroraVM-Private*** entry.
+- On the ***AuroraVM-Private*** blade, click Connect and, in the drop down menu, click RDP.
+
+
+
+  
+
