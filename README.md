@@ -127,7 +127,6 @@ This key will enable me to securely access this File Share from the Private Subn
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/VMPrivate.jpg)
 
-
 ## Now, Follow the same step and vreate the public VM and connect it to the public subnet
 - Search Virtual Machines in Azure Portal, and Enter.
 - Click create.
@@ -140,7 +139,24 @@ This key will enable me to securely access this File Share from the Private Subn
 **First,** Navigate to the Virtual machines blade.
 - On the Virtual machines blade, click the ***AuroraVM-Private*** entry.
 - On the ***AuroraVM-Private*** blade, click Connect and, in the drop down menu, click RDP.
+- Click Download RDP File and use it to connect to the AuroraVM-Private Azure VM via Remote Desktop.
+- When prompted to authenticate, provide the credentials setup while provisioning the VM.
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivConnect.jpg)
+
+## Next: Map drive (Z) to the Azure File share ***Arurorafileshare*** within the Remote Desktop session to a Windows Server 2022 computer.
+- Within the Remote Desktop session to AuroraVM-Private, click Start and then click Windows PowerShell ISE.
+- Right click and run as Administrator.
+- Within the Windows PowerShell ISE window, open the Script pane,
+- Then paste and run the PowerShell script recorded earlier in this lab,
+
+ ***remember?***
+ ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivPS1.jpg)
+
+ **After Running the script** let’s start File Explorer and verify that the (Z:) drive mapping has been successfully created.
+***And BOOM! Just like magic***
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivFilemount.jpg)
 
 
   
