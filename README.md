@@ -127,7 +127,7 @@ This key will enable me to securely access this File Share from the Private Subn
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/VMPrivate.jpg)
 
-## Now, Follow the same step and vreate the public VM and connect it to the public subnet
+## Now, Follow the same step and create the public VM and connect it to the public subnet
 - Search Virtual Machines in Azure Portal, and Enter.
 - Click create.
 - Configure Private VM ***AuroraVM-Public***, and deploy to the Private Subnet ***Aurora-Public***
