@@ -159,6 +159,8 @@ This key will enable me to securely access this File Share from the Private Subn
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivFilemount.jpg)
 
+## Next, from the console pane of the Windows PowerShell ISE console
+- run the command to verify that the virtual machine has no outbound connectivity to the internet, you know, just to be certain.
 
-  
+      ***Test-NetConnection -ComputerName www.bing.com -Port 80***
 
