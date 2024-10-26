@@ -16,7 +16,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 # NETWORK TOPOLOGY
 
-![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191780_w.jpg)
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/Net-topo.jpg)
 
 ## STEP 1: Create and Configure a Virtual Network (VNet): 
 - First we create a Resource Group ***Aurora-RG***
@@ -33,4 +33,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 - Review and Create the virtual Network
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191799_y.jpg)
+
+## STEP 2: Configure and add a Private Subnets to the Virtual Networks
+- 
 
