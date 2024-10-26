@@ -16,5 +16,5 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 # NETWORK TOPOLOGY
 
-![SOC]()
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191780_w.jpg)
 
