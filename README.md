@@ -18,3 +18,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191780_w.jpg)
 
+## STEP 1: Create and Configure a Virtual Network (VNet): 
+- First we create a Resource Group ***Aurora-RG***
+- Then created a Virtual Network ***Aurora-Vnet*** This will facilitate all network communications between my resources.
+
