@@ -88,5 +88,17 @@ This key will enable me to securely access this File Share from the Private Subn
 
 - First, in the Azure Portal, search Storage accounts and press the Enter key.
 - On the Storage accounts blade, click + Create
-- 
+- Validate details and create
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/Storage.jpg)
+
+**Next,** On the storage account Overview blade, click File Shares under the Data storage tab, 
+- Then click + File Share.
+- On the New file share blade, create new file share.
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191810_w.jpg)
+
+**Next,** Retrieve and record the PowerShell script that creates a drive mapping to the Azure file share.
+- On the storage account blade, in the list of file shares,
+- Click my-file-share.
+- On the my-file-share blade, click Connect.
