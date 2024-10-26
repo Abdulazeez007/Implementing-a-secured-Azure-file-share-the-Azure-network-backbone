@@ -102,7 +102,15 @@ This key will enable me to securely access this File Share from the Private Subn
 - On the storage account blade, in the list of file shares,
 - Click Aurorafile-share.
 - On the Aurorafile-share blade, click Connect.
+
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/FShareScript.jpg)
 
+**Take Record of this script,** You’ll need this in a later in this lab in order to map the file share from the Azure virtual machine on the Private subnet.
 
+- Now, Navigate back to the storage account blade, then in the Security + networking section, click Networking.
+
+- Under Firewalls and virtual networks blade,
+- Select the Enabled from selected virtual networks and IP addresses option and click the + Add existing virtual network link.
+
+- link the Private Subnet to this File Share, this ensures that It’s in the Private Subnet, to enable Secure Connection over the Azure Backbone Network.
 
