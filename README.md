@@ -22,3 +22,15 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 - First we create a Resource Group ***Aurora-RG***
 - Then created a Virtual Network ***Aurora-Vnet*** This will facilitate all network communications between my resources.
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191796_y.jpg)
+
+## Next: Create Subnets and Network Security Groups
+- First, Create a public subnet ***Aurora-Public***
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191798_w.jpg)
+
+- Repeat the same step and create second subnet ***Aurora-Private***
+- Review and Create the virtual Network
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191799_y.jpg)
+
