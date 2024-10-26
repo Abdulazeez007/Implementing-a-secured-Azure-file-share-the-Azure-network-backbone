@@ -180,6 +180,12 @@ This key will enable me to securely access this File Share from the Private Subn
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPubConect.jpg)
 
+
+- After Connecting to the Public VM, follow the same steps as before to see if I can also Map the Azure File Share over this Network.
+- Run the Powershell script
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPubPSFile.jpg)
+
 ***And as Expected, Access Is Denied! This time, I receive the New-PSDrive : Access is denied error.***
 
 **Note: Access is denied because the Aurora-VmPublic virtual machine is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for the Azure Storage. The storage account only allows network access from the Private subnet.**
@@ -188,4 +194,7 @@ This key will enable me to securely access this File Share from the Private Subn
 
      ***Test-NetConnection -ComputerName www.bing.com -Port 80***
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPubInternetconnected.jpg)
+
+***The test succeeded because there is no outbound security rule to deny internet on the Public subnet.***
 
