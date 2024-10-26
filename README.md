@@ -76,9 +76,17 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191806_w.jpg)
 
-- Associate the (NSG) with the Public subnet. This will allow RDP access to the Public VM I’ll use for testing later on.
-
+- Associate the (NSG) with the Public subnet. This will allow RDP access to the Public Subnet ***Aurora-Public***.
 - In the Azure Portal, Search Network Group, and click create.
+- On the Subnets pane of the NSG blade, select + Associate,
+- And select the Private subnet.
 
-- Configure NSG, like we did earlier on, but this time for the Public Subnet.
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191807_w.jpg)
+
+## STEP 3: Create a Storage Account with a File Share, and obtain the storage account key.
+This key will enable me to securely access this File Share from the Private Subnet.
+
+- First, in the Azure Portal, search Storage accounts and press the Enter key.
+- On the Storage accounts blade, click + Create
+- 
 
