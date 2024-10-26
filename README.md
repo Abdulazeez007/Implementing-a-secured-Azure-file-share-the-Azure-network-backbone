@@ -34,6 +34,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191799_y.jpg)
 
-## STEP 2: Configure and add a Private Subnets to the Virtual Networks
-- 
+## STEP 2: Configure a network security group to restrict access to the subnet.
+- Create a Network Security Group (NSG) with two outbound security rules (Storage and internet) and one inbound security rule (RDP), to enable remote login.
+- I will then associate the NSG with the Private subnet. This will restrict outbound traffic from Azure VMs connected to that subnet.
 
