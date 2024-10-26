@@ -100,8 +100,8 @@ This key will enable me to securely access this File Share from the Private Subn
 
 **Next,** Retrieve and record the PowerShell script that creates a drive mapping to the Azure file share.
 - On the storage account blade, in the list of file shares,
-- Click my-file-share.
-- On the my-file-share blade, click Connect.
+- Click Aurorafile-share.
+- On the Aurorafile-share blade, click Connect.
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/FShareScript.jpg)
 
 
