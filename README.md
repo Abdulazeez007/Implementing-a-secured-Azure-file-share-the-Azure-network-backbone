@@ -154,6 +154,7 @@ This key will enable me to securely access this File Share from the Private Subn
  ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivPS1.jpg)
 
  **After Running the script** let’s start File Explorer and verify that the (Z:) drive mapping has been successfully created.
+ 
 ***And BOOM! Just like magic***
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/VMPrivFilemount.jpg)
