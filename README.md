@@ -38,3 +38,47 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 - Create a Network Security Group (NSG) with two outbound security rules (Storage and internet) and one inbound security rule (RDP), to enable remote login.
 - I will then associate the NSG with the Private subnet. This will restrict outbound traffic from Azure VMs connected to that subnet.
 
+### First, Search and select Network Security Group
+- Create New Network Security Group
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191800_w.jpg)
+
+### Now, create an outbound security rule that allows communication to the Azure Storage service.
+- On the Aurora-NSGPrivate blade, in the Settings section, click Outbound security rules
+- Add New Rule
+- Allow Outbound traffic from the private Networks to the Azure storage account
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/nsgprivate.jpg)
+
+### Repeat the above steps and create a new Outbound rule for Outbound Internet Traffic
+- On the Aurora-NSGPrivate blade, in the Settings section, click Outbound security rules
+- Add New Rule
+- Deny Outbound traffic from the private Networks to the Internet
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/Internet.jpg)
+
+### Next, reate an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the Subnet.
+- The rule overrides a default security rule that denies all inbound traffic from the internet.
+- Remote Desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
+- **Now**, Navigate to the inbound pane, and add a new rule.
+- Allow Remote Desktop Connection to the Private Subnet ***Aurora-Private***
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191802_w.jpg)
+
+### NEXT I’ll apply the Network Security Group firewall rules that we’ve created to the Private Subnet.
+- On the Subnets pane of the NSG blade, select + Associate,
+- And select the Private subnet.
+
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191804_w.jpg)
+
+### NEXT: Configure a network security group to allow rdp on the public subnet.
+- create a Network Security Group (NSG), with one inbound security rule, to allow (RDP).
+
+![SOC]()
+
+- Associate the (NSG) with the Public subnet. This will allow RDP access to the Public VM I’ll use for testing later on.
+
+- In the Azure Portal, Search Network Group, and click create.
+
+- Configure NSG, like we did earlier on, but this time for the Public Subnet.
+
