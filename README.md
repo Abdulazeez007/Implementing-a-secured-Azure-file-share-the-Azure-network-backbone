@@ -114,3 +114,5 @@ This key will enable me to securely access this File Share from the Private Subn
 
 - link the Private Subnet to this File Share, this ensures that It’s in the Private Subnet, to enable Secure Connection over the Azure Backbone Network.
 
+![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileshareNet.jpg)
+
