@@ -199,6 +199,7 @@ This key will enable me to securely access this File Share from the Private Subn
 ***The test succeeded because there is no outbound security rule to deny internet on the Public subnet.***
 
 DURING THIS PROJECT WE:
+
     🌐 Created a storage endpoint to ensure that traffic destined for Azure Storage remains within the Azure backbone network.
     🔒 Developed and configured Network Security Groups (NSGs) for various subnets, allowing for granular control over network interactions and resource access.
     📂 Configured the storage endpoint to restrict access exclusively to resources from a designated subnet.
@@ -210,3 +211,6 @@ DURING THIS PROJECT WE:
 Note: Always remember to delete and deprovision cloud resources when their services are no longer required! 🗑️
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191830_w.jpg)
+
+
+***SEE YOU AGAIN SOON!!!***
