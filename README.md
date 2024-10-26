@@ -57,7 +57,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/Internet.jpg)
 
-### Next, reate an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the Subnet.
+### Next, Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the Subnet.
 - The rule overrides a default security rule that denies all inbound traffic from the internet.
 - Remote Desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
 - **Now**, Navigate to the inbound pane, and add a new rule.
@@ -65,7 +65,7 @@ Additionally, I will set up a public subnet with another VM to verify that my fi
 
 ![SOC](https://github.com/Virus192/Implementing-a-secured-Azure-file-share-on-the-Azure-network-backbone/blob/main/FileShare/photo_5827888068391191802_w.jpg)
 
-### NEXT I’ll apply the Network Security Group firewall rules that we’ve created to the Private Subnet.
+### NOW, I’ll apply the Network Security Group firewall rules that we’ve created to the Private Subnet.
 - On the Subnets pane of the NSG blade, select + Associate,
 - And select the Private subnet.
 
